@@ -1,7 +1,9 @@
-doctype 5
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-html
+!!! 5
+//if IE 8
+  <html class="no-js lt-ie9" lang="en">
+//[if gt IE 8]><!
+html.no-js(lang='en')
+  //<![endif]
   include head
   body
     block content
