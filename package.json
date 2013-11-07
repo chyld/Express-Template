@@ -11,6 +11,10 @@
     "express-less": "*",
     "lodash": "*",
     "moment": "*",
-    "mongoose": "*"
+    "mongoose": "*",
+    "async": "*",
+    "colors": "*",
+    "request": "*",
+    "socket.io": "*"
   }
 }
