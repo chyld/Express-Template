@@ -15,7 +15,8 @@ exports.initialize = function(app, RedisStore){
   app.use(express.cookieParser());
   app.use(express.session({
     store : new RedisStore({host: 'localhost', port: 6379}),
-    secret: 'change-this-to-a-super-secret-tmessage'
+    secret: 'change-this-to-a-super-secret-message',
+    cookie: { maxAge: 60 * 60 * 1000 }
   }));
   app.use(app.router);
 
