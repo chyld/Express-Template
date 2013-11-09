@@ -15,6 +15,9 @@
     "async": "*",
     "colors": "*",
     "request": "*",
-    "socket.io": "*"
+    "socket.io": "*",
+    "connect-redis": "*",
+    "require-dir": "*",
+    "bcrypt": "*"
   }
 }
