@@ -7,7 +7,7 @@ function initialize(){
   initializeSocketIO();
 }
 
-function initializeSocketIO{
+function initializeSocketIO(){
   var port = location.port ? location.port : '80';
   var url = location.protocol + '//' + location.hostname + ':' + port + '/app';
 
