@@ -4,7 +4,14 @@ var socket;
 
 function initialize(){
   $(document).foundation();
-  socket = io.connect('http://localhost:3000/app');
+  initializeSocketIO();
+}
+
+function initializeSocketIO{
+  var port = location.port ? location.port : '80';
+  var url = location.protocol + '//' + location.hostname + ':' + port + '/app';
+
+  socket = io.connect(url);
   socket.on('connected', socketConnected);
 }
 
