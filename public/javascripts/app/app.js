@@ -1,3 +1,5 @@
+/* global document, window, io */
+
 $(document).ready(initialize);
 
 var socket;
@@ -8,8 +10,8 @@ function initialize(){
 }
 
 function initializeSocketIO(){
-  var port = location.port ? location.port : '80';
-  var url = location.protocol + '//' + location.hostname + ':' + port + '/app';
+  var port = window.location.port ? window.location.port : '80';
+  var url = window.location.protocol + '//' + window.location.hostname + ':' + port + '/app';
 
   socket = io.connect(url);
   socket.on('connected', socketConnected);

@@ -19,5 +19,12 @@
     "connect-redis": "*",
     "require-dir": "*",
     "bcrypt": "*"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-notify": "*",
+    "home-dir": "*"
   }
 }
